@@ -84,3 +84,14 @@ title.addEventListener("click" , () => {
     }
     is_red = !is_red;
 })
+
+const password = document.querySelector('input[type=password]');
+const checkbox = document.querySelector('input[type=checkbox]');
+
+checkbox.addEventListener("change", () => {    
+    if (checkbox.checked === true) {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+})
