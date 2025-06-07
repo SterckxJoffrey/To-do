@@ -66,3 +66,10 @@ delete_button.addEventListener("click", () => {
 })
 
 
+const champ = document.getElementById('champ');
+const affichage = document.getElementById('affichage');
+
+champ.addEventListener("input", () => {
+    affichage.textContent = champ.value.length;    
+})
+

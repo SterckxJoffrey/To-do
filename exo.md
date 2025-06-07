@@ -60,5 +60,51 @@ Un <input> texte
 
 À chaque frappe, affiche en dessous le nombre de lettres tapées
 
-
 ➡️ Tu pratiques : événement input, .value.length
+
+🔄 8. Alterner la couleur d’un élément à chaque clic
+⏱️ 10-15 min
+
+Crée un <div> ou un <h2>.
+
+À chaque clic, alterne entre deux couleurs (ex. rouge et bleu).
+
+➡️ Tu pratiques : variable d’état, style.color, if/else ou opérateur ternaire.
+
+👁️‍🗨️ 9. Afficher un mot de passe en clair
+⏱️ 10-15 min
+
+Un champ <input type="password"> + une case à cocher “Afficher”.
+
+Quand la case est cochée, le mot de passe devient visible (type="text"), sinon caché.
+
+➡️ Tu pratiques : input.type, checked, gestion des événements change.
+
+🔁 10. Créer une todo-list interactive
+⏱️ 20-30 min
+
+Champ texte + bouton “Ajouter”.
+
+Chaque élément ajouté peut être supprimé individuellement avec un bouton “❌”.
+
+➡️ Tu pratiques : createElement, appendChild, addEventListener, parentNode.removeChild().
+
+⏱️ 11. Chronomètre simple
+⏱️ 15-20 min
+
+Boutons “Démarrer”, “Pause”, “Réinitialiser”.
+
+Un texte affiche le nombre de secondes écoulées.
+
+➡️ Tu pratiques : setInterval, clearInterval, variables, logique de temps.
+
+🎲 12. Jeu : nombre aléatoire à deviner
+⏱️ 30-45 min
+
+Le JS choisit un nombre entre 1 et 10.
+
+L’utilisateur entre un chiffre, clique sur “Valider”.
+
+Affiche si c’est “Trop haut”, “Trop bas”, ou “Gagné !”.
+
+➡️ Tu pratiques : Math.random(), parseInt, value, conditions.
