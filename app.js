@@ -73,3 +73,14 @@ champ.addEventListener("input", () => {
     affichage.textContent = champ.value.length;    
 })
 
+const title = document.querySelector('h2');
+let is_red = true;
+
+title.addEventListener("click" , () => {
+    if (is_red) {
+        title.style.color = "blue";
+    } else {
+        title.style.color = "red"
+    }
+    is_red = !is_red;
+})
