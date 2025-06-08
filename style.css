@@ -47,31 +47,26 @@ input[type="text"] {
 
   }
   
-  /* Style de la checkbox */
+
   #to_do_list input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(1.2); /* Agrandit la checkbox */
+    margin-right: 20px;
+    transform: scale(1.2); 
   }
   
-  /* Style du bouton supprimer */
   .supprimer {
     background-color: transparent;
     border: none;
-    color: #d11a2a;
+
     font-size: 18px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
-  .supprimer:hover {
-    color: #ff4d4d;
-  }
   
   .done  {
     text-decoration: line-through;
+    opacity: 0.6;
   }
-
-  
 
   @media (min-width: 600px) and (max-width: 900px) {
 
@@ -80,8 +75,7 @@ input[type="text"] {
 
     }
   }
-  
-  /* Ordinateur (desktop) : largeur d’écran à partir de 901px */
+
   @media (min-width: 901px) {
     input[type="text"] {
         width: 40%;
