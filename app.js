@@ -34,7 +34,10 @@ button.addEventListener("click", () => {
 // Fonction pour ajouter une tâche dans le DOM
 function ajouterTacheDOM(texte) {
     const li = document.createElement('li');
-    li.textContent = texte;
+
+    // On crée un span pour le texte, pour pouvoir styliser uniquement le texte
+    const spanTexte = document.createElement('span');
+    spanTexte.textContent = texte;
 
     const buttonSupprimer = document.createElement('button');
     buttonSupprimer.textContent = '❌';
@@ -47,12 +50,13 @@ function ajouterTacheDOM(texte) {
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.id = 'done';
     checkbox.addEventListener('change', () => {
-        li.classList.toggle('done', checkbox.checked);
+        // On applique la classe done uniquement au span du texte
+        spanTexte.classList.toggle('done', checkbox.checked);
     });
 
     li.prepend(checkbox);
+    li.appendChild(spanTexte);
     li.appendChild(buttonSupprimer);
     liste.appendChild(li);
 }
